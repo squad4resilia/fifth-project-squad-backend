@@ -1,8 +1,8 @@
 import express from "express";
-import eventController from "../controllers/event-controllers.js";
+import threadController from "../controllers/thread-controllers.js";
 
 const router = express.Router();
 
-router.get('/events', eventController.listarEventos);
+router.get('/thread', threadController.listThreads);
 
 export default router;
