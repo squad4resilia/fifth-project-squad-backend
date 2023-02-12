@@ -13,7 +13,7 @@ class commentController{
     }
 
     static addComment = async (req, res) => {
-        const threadId = req.params.threadId;
+        const threadId = req.params.id;
         const thread = await Thread.findById(threadId);
         const comment = new Comment({
           thread_id: threadId,
