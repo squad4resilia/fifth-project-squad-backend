@@ -1,7 +1,7 @@
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";
 
 mongoose.set('strictQuery', true);
-mongoose.connect('');
+mongoose.connect('mongodb+srv://resilia-event-project:159357ab@events.wjtzbt5.mongodb.net/?retryWrites=true&w=majority');
 
 const db = mongoose.connection;
 
