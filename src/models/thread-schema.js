@@ -7,6 +7,7 @@ const threadSchema = new mongoose.Schema(
         thread_title: {type: String, required:true}, //doces ou titulo
         thread_msg: {type: String, required: true}, //msg principal da thread
         thread_date: {type: Date, default: Date.now},
+        thread_CN: {type: Number, default: 0}
     },
     {
         versionKey: false, //sem caminho para versionamento 
