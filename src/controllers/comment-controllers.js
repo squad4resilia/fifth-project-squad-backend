@@ -1,4 +1,5 @@
-import Comment from "../models/comment-schema.js";
+import { Comment } from "../models/schemas.js";
+import { Thread } from "../models/schemas.js";
 
 class commentController{
 
@@ -11,15 +12,21 @@ class commentController{
         })
     }
 
-    static createComment = (req, res)=>{
-        let newComment = new Comment(req.body);
-        newComment.save((err, comment)=>{
-            if(err){
-                res.status(500).send(err);
-            }
-            res.status(201).json(newComment)
-        })
-    }
+    static addComment = async (req, res) => {
+        const threadId = req.params.threadId;
+        const thread = await Thread.findById(threadId);
+        const comment = new Comment({
+          thread_id: threadId,
+          comment_author: req.body.comment_author,
+          comment_msg: req.body.comment_msg
+        });
+    
+        thread.comments.push(comment);
+        await thread.save();
+        await comment.save();
+    
+        res.status(200).json({ message: 'Comment added successfully!' });
+      };
 
 }
 
