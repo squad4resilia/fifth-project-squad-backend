@@ -12,7 +12,10 @@ db.on("error", (err)=>{
 })
 
 const app = express();
-app.use(cors())
+app.use(cors({
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    allowedHeaders: ["Content-Type", "Authorization"],
+  }));
 app.use(express.json());
 routes(app);
 
