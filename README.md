@@ -1,4 +1,14 @@
-# Passo a passo para acessar nossa API
+# Como executar o projeto
 
-1. `npm i ou npm install` para instalar a pasta node_modules.
-2. `node server.js` para iniciar o servidor.
+## Back end
+
+```bash
+# clonar repositório
+git clone 
+
+# entrar na pasta do projeto back end
+Abrir o terminal, no terminal colocar `npm i ou npm install` para instalar a pasta node_modules.
+
+
+# executar o projeto
+`node server.js` para executar o projeto
