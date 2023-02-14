@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 import db from "./db-config/connection.js";
 import routes from "./routes/main.js"
 
@@ -11,6 +12,7 @@ db.on("error", (err)=>{
 })
 
 const app = express();
+app.use(cors())
 app.use(express.json());
 routes(app);
 
