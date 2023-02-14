@@ -17,7 +17,7 @@ Abrir o terminal, no terminal colocar "npm i ou npm install" para instalar a pas
 ```
 
 
-## Front end web
+## Front end 
 
 ```bash
 ## CLONAR REPOSITÓRIO
