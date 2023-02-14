@@ -1,3 +1,19 @@
+# Tecnologias utilizadas
+## Back end
+- MONGOOSE
+- MONGO DB
+- EXPRESS
+- JAVA SCRIPT
+
+## Front end
+- REACT / VITE / CSS / JS 
+- AXIOS
+- REACT ROUTER DOM
+
+
+
+
+
 # Como executar o projeto
 
 
