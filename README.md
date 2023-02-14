@@ -13,7 +13,7 @@ Abrir o terminal, no terminal colocar "npm i ou npm install" para instalar a pas
 
 # EXECUTAR PROJETO
 "node server.js" para executar o projeto
-
+```
 
 
 ## Front end web
