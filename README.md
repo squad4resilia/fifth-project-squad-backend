@@ -1,7 +1,6 @@
 # Sobre o projeto
 
-
-(COLOCAR O LINK DEPOIS)
+ Link do projeto com back end e front end - https://github.com/ysmaelmarks/tst
 
 A nossa aplicação se refere a uma página web que tem o intuito de conectar todos independente do assunto, pois tem pessoas que não se sentem a vontade quando são "obrigadas" a colocar seus nomes.
 Por isso criamos uma página onde você pode se expressa sendo de forma anônima ou formal assim todos sempre vão se sentir livres para opinar.
